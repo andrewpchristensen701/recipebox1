@@ -1,0 +1,19 @@
+<ul>
+    {% for foo in reci %}
+    <li>
+        Title {{foo.title}}
+    </li>
+    <li>
+        Author <a href="/author/{{foo.id}}/">{{foo.author}}</a>
+    </li>
+    <li>
+        Description {{foo.description}}
+    </li>
+    <li>
+        Instructions {{foo.instructions}}
+    </li>
+    <li>
+        Required Time {{foo.reqtime}}
+    </li>
+        {%endfor%}
+</ul>

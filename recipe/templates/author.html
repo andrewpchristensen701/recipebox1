@@ -1,0 +1,19 @@
+<ul>
+    
+    {% for foo in auth %}
+    <li>
+        Name {{foo.name}}
+        
+        Biography {{foo.bio}}
+
+    </li>  
+    {% endfor %}
+     
+    {% for recipe in recipes %}
+    <li>
+        Recipe Name <a href="/recipe/{{recipe.id}}/">{{recipe.title}}</a>
+    </li>
+    {% endfor %}
+    
+
+</ul>

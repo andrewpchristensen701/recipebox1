@@ -1,0 +1,12 @@
+<h1>fricc</h1>
+
+why
+
+<ul>
+    {% for foo in data %}
+        <li><a href="/recipe/{{foo.id}}/">{{ foo.title }}</a>, by <a href="/author/{{foo.id}}/">{{foo.author}}</a></li>
+        <ul>
+            <li>{{foo.body}}</li>
+        </ul>
+        {%endfor%}
+</ul>
